@@ -6,9 +6,11 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 12:29:37 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/17 15:01:36 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/18 14:57:12 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int	ft_putstr(char *str)
 {

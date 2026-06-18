@@ -6,7 +6,7 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 17:33:43 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/17 23:17:41 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/18 14:29:59 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ int	ft_putnbr(int n)
 		len += ft_putchar('-');
 		nbr = -nbr;
 	}
-	if (nbr >= 10)
-		len += ft_putnbr(nbr / 10);
-	len += ft_putchar((nbr % 10) + '0');
+	len += ft_putbase(nbr, "0123456789");
 	return (len);
 }

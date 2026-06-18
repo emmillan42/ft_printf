@@ -6,7 +6,7 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 14:29:03 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/16 14:36:19 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/18 13:45:07 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,10 @@ int	ft_print_format(char specifier, va_list args);
 /*Printing Functions*/
 int	ft_putchar(char c);
 int	ft_putstr(char *str);
+int	ft_putbase(unsigned long n, const char *base);
 int	ft_putnbr(int n);
-int ft_putunsigned(unsigned int n);
-int	puthex(unsigned int n, char format);
-int	putptr(void *ptr);
+int	ft_putunsigned(unsigned int n);
+int	ft_puthex(unsigned int n, char format);
+int	ft_putptr(void *ptr);
 
 #endif
