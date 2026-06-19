@@ -6,7 +6,7 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 21:51:48 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/18 22:27:44 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/19 14:02:27 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -182,9 +182,26 @@ int	main(void)
 	printf("EMC\n");
 	ft_printf(NULL);
 	printf("\n");
-	printf("%d", ft_printf(NULL));
+	printf("%d", printf(NULL));
 	printf("\n");
 	ft_printf("%d", ft_printf(NULL));
+	printf("\n");
+	printf("========================================\n");
+	printf("INTEGER\n");
+	printf("========================================\n");
+	ret_printf = printf("return printf    = %d\n", 10);
+	ret_ft_printf = ft_printf("return printf    = %d\n", 10);
+	printf("%d %d\n", ret_printf, ret_ft_printf);
 
+	printf("========================================\n");
+	printf("ONLY %%\n");
+	printf("========================================\n");
+
+	ret_printf = printf("printf    : [%p]\n", ptr);
+	ret_ft_printf = ft_printf("%");
+	printf("\n");
+
+	printf("return printf    = %d\n", ret_printf);
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
 	return (0);
 }

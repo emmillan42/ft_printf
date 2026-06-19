@@ -114,13 +114,13 @@ This design removes duplicated recursive algorithms and centralizes all base-con
 				 ↓
 		  ft_print_format
 				 ↓
- ┌───────────────┬───────────────┐
- │               │               │
-ft_putchar    ft_putstr      ft_putbase
-                                 ↓
-		 ┌───────────────┬───────────────┬───────────────┐
-		 │               │               │               │
-	 ft_putnbr   ft_putunsigned      ft_puthex       ft_putptr
+ ┌───────────────┬───────────────┬───────────────┬───────────────┬───────────────┐
+ │               │               │               │               │               │
+ft_putchar    ft_putstr      ft_putnbr   ft_putunsigned      ft_puthex       ft_putptr
+                                 │               │               │               │
+                                 └───────────────┴───────────────┴───────────────┘
+                                                         ↓
+		                                            ft_putbase
 
 ```
 
