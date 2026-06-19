@@ -6,7 +6,7 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 21:51:48 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/19 14:02:27 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/19 23:52:37 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,29 +179,51 @@ int	main(void)
 	printf("return printf    = %d\n", ret_printf);
 	printf("return ft_printf = %d\n\n", ret_ft_printf);
 
-	printf("EMC\n");
+	printf("========================================\n");
+	printf("NULL\n");
+	printf("========================================\n");
+	// printf(NULL);				//Compile without flags  -Wall -Wextra -Werror
+	// printf("\n");
+	// printf("%d", printf(NULL));	//Compile without flags  -Wall -Wextra -Werror
+	// printf("\n");
 	ft_printf(NULL);
 	printf("\n");
-	printf("%d", printf(NULL));
-	printf("\n");
 	ft_printf("%d", ft_printf(NULL));
-	printf("\n");
+	printf("\n\n");
 	printf("========================================\n");
-	printf("INTEGER\n");
+	printf("END %%\n");
 	printf("========================================\n");
-	ret_printf = printf("return printf    = %d\n", 10);
-	ret_ft_printf = ft_printf("return printf    = %d\n", 10);
-	printf("%d %d\n", ret_printf, ret_ft_printf);
+
+	// ret_printf = printf("printf: Hello, World\n%");	//Compile without flags
+	ret_ft_printf = ft_printf("ft_printf : Hello, World\n%");
+
+	// printf("return printf    = %d\n", ret_printf);	//Compile without flags
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+
+	// ret_printf = printf("printf    : [%%]\n%");		//Compile without flags
+	ret_ft_printf = ft_printf("ft_printf : [%%]\n%");
+
+	// printf("return printf    = %d\n", ret_printf);	//Compile without flags
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
 
 	printf("========================================\n");
 	printf("ONLY %%\n");
 	printf("========================================\n");
 
-	ret_printf = printf("printf    : [%p]\n", ptr);
+	// ret_printf = printf("%"); //Compile without flags  -Wall -Wextra -Werror
 	ret_ft_printf = ft_printf("%");
-	printf("\n");
+	// printf("return printf    = %d\n", ret_printf);	//Compile without flags
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+
+	printf("========================================\n");
+	printf("MISC %%\n");
+	printf("========================================\n");
+
+	ret_printf = printf("printf    = %d\n", 76);
+	ret_ft_printf = ft_printf("ft_printf = %d\n", 76);
 
 	printf("return printf    = %d\n", ret_printf);
 	printf("return ft_printf = %d\n\n", ret_ft_printf);
+
 	return (0);
 }
