@@ -6,7 +6,7 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/16 14:29:03 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/19 23:33:36 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/20 16:15:16 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,5 @@ int	ft_putptr(void *ptr);
 
 /*Format Dispatcher*/
 int	ft_print_format(char specifier, va_list args);
-
-/*Aux Functions*/
-int	ft_fmtlen(const char *fmt);
 
 #endif

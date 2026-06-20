@@ -6,7 +6,7 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 17:58:23 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/19 23:47:23 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/20 13:14:20 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_printf(const char *format, ...)
 	int		count;
 	int		ret;
 
-	if (!format || format[ft_fmtlen(format) - 1] == '%')
+	if (!format)
 		return (-1);
 	va_start(args, format);
 	count = 0;
