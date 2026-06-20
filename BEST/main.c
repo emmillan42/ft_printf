@@ -6,7 +6,7 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 21:51:48 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/19 23:52:37 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/20 12:06:44 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -190,6 +190,7 @@ int	main(void)
 	printf("\n");
 	ft_printf("%d", ft_printf(NULL));
 	printf("\n\n");
+
 	printf("========================================\n");
 	printf("END %%\n");
 	printf("========================================\n");
@@ -213,6 +214,39 @@ int	main(void)
 	// ret_printf = printf("%"); //Compile without flags  -Wall -Wextra -Werror
 	ret_ft_printf = ft_printf("%");
 	// printf("return printf    = %d\n", ret_printf);	//Compile without flags
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+
+	printf("========================================\n");
+	printf("INVALID SPECIFIER\n");
+	printf("========================================\n");
+
+	// ret_printf = printf("Test %K\n", 76);
+	// printf("return printf    = %d\n", ret_printf);
+	ret_ft_printf = ft_printf("Test %K\n", 76);
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+
+	// ret_printf = printf("%q\n", 76);
+	// printf("return printf    = %d\n", ret_printf);
+	ret_ft_printf = ft_printf("%q\n", 76);
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+
+	ret_ft_printf = ft_printf("%");
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+	ret_ft_printf = ft_printf("%q");
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+	ret_ft_printf = ft_printf("%z");
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+	ret_ft_printf = ft_printf("%f");
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+	ret_ft_printf = ft_printf("%+");
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+	ret_ft_printf = ft_printf("%#");
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+	ret_ft_printf = ft_printf("% ");
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+	ret_ft_printf = ft_printf("abc %q def");
+	printf("return ft_printf = %d\n\n", ret_ft_printf);
+	ret_ft_printf = ft_printf("abc %");
 	printf("return ft_printf = %d\n\n", ret_ft_printf);
 
 	printf("========================================\n");
