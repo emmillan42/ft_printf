@@ -6,7 +6,7 @@
 /*   By: emmmilla <emmmilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/18 21:51:48 by emmmilla          #+#    #+#             */
-/*   Updated: 2026/06/20 12:06:44 by emmmilla         ###   ########.fr       */
+/*   Updated: 2026/06/20 16:05:01 by emmmilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -220,14 +220,18 @@ int	main(void)
 	printf("INVALID SPECIFIER\n");
 	printf("========================================\n");
 
-	// ret_printf = printf("Test %K\n", 76);
-	// printf("return printf    = %d\n", ret_printf);
+	// ret_printf = printf("Test %K\n", 76);			//Compile without flags
+	// printf("\n");
+	printf("return printf    = %d\n", ret_printf);
 	ret_ft_printf = ft_printf("Test %K\n", 76);
+	printf("\n");
 	printf("return ft_printf = %d\n\n", ret_ft_printf);
 
-	// ret_printf = printf("%q\n", 76);
-	// printf("return printf    = %d\n", ret_printf);
+	// ret_printf = printf("%q\n", 76);					//Compile without flags
+	// printf("\n");
+	printf("return printf    = %d\n", ret_printf);
 	ret_ft_printf = ft_printf("%q\n", 76);
+	printf("\n");
 	printf("return ft_printf = %d\n\n", ret_ft_printf);
 
 	ret_ft_printf = ft_printf("%");
